@@ -1,0 +1,50 @@
+{
+  "name": "product-crud-api",
+  "version": "1.0.0",
+  "description": "API REST para gestión de productos con Express y DynamoDB",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.600.0",
+    "@aws-sdk/lib-dynamodb": "3.600.0",
+    "class-validator": "^0.14.1",
+    "dotenv": "16.4.5",
+    "express": "4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/jest": "29.5.12",
+    "@types/node": "22.5.0",
+    "@types/supertest": "2.0.16",
+    "eslint": "8.57.0",
+    "jest": "29.7.0",
+    "supertest": "7.0.0",
+    "ts-jest": "29.2.5",
+    "ts-node": "10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.spec.ts"
+    ]
+  }
+}
